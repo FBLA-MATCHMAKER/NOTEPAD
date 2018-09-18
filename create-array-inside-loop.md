@@ -1,21 +1,21 @@
 class program {
 
-	public static void main(String[] args) {
+ public static void main(String[] args) {
 
-		int n = 15;
+  int n = 15;
 
-		int m = 5;
+  int m = 5;
 
-		String[][] arrayOfArrays = new String[n][];
+   String[][] arrayOfArrays = new String[n][];
 
-		for(int i=0;i<n;i++) {
+   for(int i=0;i<n;i++) {
 
-			arrayOfArrays[i] = new String[m];
+   arrayOfArrays[i] = new String[m];
 
-			System.out.println(arrayOfArrays[i]);
+   System.out.println(arrayOfArrays[i]);
 
-		}
+   }
 
-	}
+   }
 
 }
