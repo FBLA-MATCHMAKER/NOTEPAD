@@ -1,11 +1,21 @@
-int n = 10;
+class program {
 
-int m = 5;
+	public static void main(String[] args) {
 
-String[][] arrayOfArrays = new String[n][];
+		int n = 15;
 
-for(int i=0;i<n;i++) {
+		int m = 5;
 
-   arrayOfArrays[i] = new String[m];
-    
+		String[][] arrayOfArrays = new String[n][];
+
+		for(int i=0;i<n;i++) {
+
+			arrayOfArrays[i] = new String[m];
+
+			System.out.println(arrayOfArrays[i]);
+
+		}
+
+	}
+
 }
