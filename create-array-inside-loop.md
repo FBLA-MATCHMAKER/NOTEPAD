@@ -4,10 +4,8 @@ int m = 5;
 
 String[][] arrayOfArrays = new String[n][];
 
-for(int i=0;i<n;i++)
+for(int i=0;i<n;i++) {
 
-{
-
-    arrayOfArrays[i] = new String[m];
+   arrayOfArrays[i] = new String[m];
     
 }
