@@ -19,3 +19,7 @@ class program {
    }
 
 }
+
+
+
+https://stackoverflow.com/questions/1277880/how-can-i-get-the-count-of-line-in-a-file-in-an-efficient-way/1277904
