@@ -1,0 +1,103 @@
+File f = new File("FBLA.txt");
+
+		try {
+			//Scanner to read file
+			Scanner sc = new Scanner(f);
+
+
+
+
+//Determine the length of FBLA.txt
+			BufferedReader reader = new BufferedReader(new FileReader("FBLA.txt"));
+			int lines = 0;
+			while (reader.readLine() != null) lines++;
+			reader.close();
+
+			//Create 2-D Array
+			String[][] arrayOfArrays = new String[lines][3];
+
+
+			 while(sc.hasNextLine())	{
+			//Declare 
+			  	String lineParse = sc.nextLine();
+          int s = 0;
+     //Split the values
+				String [] parts = lineParse.split("\t");
+				String conName = (parts[0]), gender = (parts[1]), grade = (parts[2]), answer = (parts[3]);
+				String genGrade = gender + grade;
+				String [] ConString = {conName, genGrade, answer};
+			
+    //Put ConString into its respective files
+      arrayOfArrays[s][0] = ConString[0];
+       arrayOfArrays[s][1] = ConString[1];
+        arrayOfArrays[s][2] = ConString[2];
+    //Print Test
+      System.out.print(arrayOfArrays[s][0] + "  ");
+       System.out.print(arrayOfArrays[s][1] + " ");
+        System.out.println(arrayOfArrays[s][2]);
+
+      s = s + 1;
+			}
+			 
+      
+      
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+//The Original While Loop (Contents; TO BE USED LATER)
+/*
+		while(sc.hasNextLine()) {
+				//Declare 
+				String lineP = sc.nextLine();
+				//Split the values
+				String [] parts = lineP.split("\t");
+				String name = (parts[0]), gender = (parts[1]), grade = (parts[2]), answer = (parts[3]);
+				String genGrade = gender + grade;
+
+				String s = "";
+				String [] contents = {name, genGrade, s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s};
+
+
+				//Split the Answer
+				for(int a = 0; a < 30; a++) {	
+					String aPlus = (answer.substring(a, a + 1));
+					contents [a + 2] = aPlus;
+				} //End of the "a" {_for_} loop	
+
+			} //End of the {_while_} loop
+*/
+
+		} //End of the {_try_}
+
+		//Catch {_file_f_}
+		catch(Exception e) { System.out.println(" :( ");	}
