@@ -1,0 +1,71 @@
+ //How to use this:
+
+  /*
+
+  int percentMatch; Where you hold the percentage match between two people
+  String holdName; Where you hold the Name of the person matched (The many people, not the master)
+
+
+  int box(x); Where these values get stored later, not important for you to use
+  String sBox(x); Where the name gets held, not important for you to use
+
+
+  You need to minipulate "percentMatch" and "holdName", but not box(x) or sBox(x)
+
+  Ask me for more details
+
+  */
+
+
+  //Fill Boxes	
+    int percentMatch = 0;
+		int box1 = 0, box2 = 0, box3 = 0, box4 = 0, box5 = 0, box6 = 0, box7 = 0, box8 = 0, box9 = 0, box10 = 0;
+    
+    String holdName = "";
+		String sBox1 = "", sBox2 = "", sBox3 = "", sBox4 = "", sBox5 = "", sBox6 = "", sBox7 = "", sBox8 = "", sBox9 = "", sBox10 = "";
+
+
+		if(percentMatch > box1) {
+			box10 = box9;box9 = box8;box8 = box7;box7 = box6;box6 = box5;box5 = box4;box4 = box3;box3 = box2;box2 = box1;box1 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8=sBox7;sBox7=sBox6;sBox6=sBox5;sBox5=sBox4;sBox4=sBox3;sBox3=sBox2;sBox2=sBox1;sBox1= holdName; 
+		} else if (percentMatch > box2) {
+			box10 = box9;box9 = box8;box8 = box7;box7 = box6;box6 = box5;box5 = box4;box4 = box3;box3 = box2;box2 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8=sBox7;sBox7=sBox6;sBox6=sBox5;sBox5=sBox4;sBox4=sBox3;sBox3=sBox2;sBox2= holdName; 
+		} else if (percentMatch > box3) {
+			box10 = box9;box9 = box8;box8 = box7;box7 = box6;box6 = box5;box5 = box4;box4 = box3;box3 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8=sBox7;sBox7=sBox6;sBox6=sBox5;sBox5=sBox4;sBox4=sBox3;sBox3= holdName; 
+		} else if (percentMatch > box4) {
+			box10 = box9;box9 = box8;box8 = box7;box7 = box6;box6 = box5;box5 = box4;box4 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8=sBox7;sBox7=sBox6;sBox6=sBox5;sBox5=sBox4;sBox4= holdName; 
+		} else if (percentMatch > box5) {
+			box10 = box9;box9 = box8;box8 = box7;box7 = box6;box6 = box5;box5 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8=sBox7;sBox7=sBox6;sBox6=sBox5;sBox5= holdName; 
+		} else if (percentMatch > box6) {
+			box10 = box9;box9 = box8;box8 = box7;box7 = box6;box6 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8=sBox7;sBox7=sBox6;sBox6= holdName; 
+		} else if (percentMatch > box7) {
+			box10 = box9;box9 = box8;box8 = box7;box7 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8=sBox7;sBox7= holdName; 
+		} else if (percentMatch > box8) {
+			box9 = box8;box10 = box9;box8 = percentMatch;
+      sBox10=sBox9;sBox9=sBox8;sBox8= holdName; 
+		} else if (percentMatch > box9) {
+			box10 = box9;box9 = percentMatch; 
+      sBox10=sBox9; sBox9= holdName; 
+		} else if (percentMatch > box10) {
+			box10 = percentMatch;
+      sBox10= holdName; 
+		} 
+
+
+    System.out.println("Hold name matches");
+		System.out.println(box1);
+		System.out.println(box2);
+    System.out.println(box3);
+    System.out.println(box4);
+    System.out.println(box5);
+    System.out.println(box6);
+    System.out.println(box7);
+    System.out.println(box8);
+    System.out.println(box9);
+    System.out.println(box10);
